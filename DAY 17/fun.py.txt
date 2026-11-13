@@ -1,0 +1,75 @@
+A function is a reusable block of code that performs a particular task. Functions help organize a program and avoid repeating code.
+
+Define a function with `def`, then call it using its name and parentheses:
+
+```python
+def greet(name):
+	print(f"Hello, {name}!")
+
+greet("Ava")  # Output: Hello, Ava!
+```
+
+Here, `name` is a parameter. The value `"Ava"` passed to the function is an argument.
+
+Functions can return values for other code to use:
+
+```python
+def add(a, b):
+	return a + b
+
+result = add(3, 4)
+print(result)  # Output: 7
+```
+
+`return` sends a result back to the caller. If a function has no `return` statement, it returns `None` by default.
+
+Common types of functions in Python:
+
+1. **Built-in functions** are provided by Python, such as `print()`, `len()`, and `round()`.
+   ```python
+   print(len("Python"))  # Output: 6
+   ```
+
+2. **User-defined functions** are created with `def`, such as `greet()` and `add()` above.
+
+3. **Lambda functions** are small anonymous functions written with `lambda`:
+   ```python
+   square = lambda number: number * number
+   print(square(5))  # Output: 25
+   ```
+
+Functions can also be grouped by their parameters and return values:
+- No parameters, no returned value: `def say_hi(): print("Hi!")`
+- Parameters, no returned value: `def show_name(name): print(name)`
+- No parameters, returns a value: `def get_answer(): return 42`
+- Parameters and returns a value: `def multiply(a, b): return a * b`
+
+In short: define a function, provide any required arguments when calling it, and use its returned value if it provides one.
+
+## Arguments
+
+An argument is a value supplied to a function when you call it. The function's definition names parameters that receive those values. For example, in `greet("Ava")`, `"Ava"` is an argument and `name` is the parameter.
+
+Common types of arguments in Python:
+
+- **Positional arguments** are matched to parameters by their order: `add(3, 4)`.
+- **Keyword arguments** are matched by parameter name: `greet(name="Ava")`.
+- **Default arguments** use a preset value when you leave that argument out:
+   ```python
+   def greet(name="friend"):
+         print(f"Hello, {name}!")
+
+   greet()  # Uses "friend"
+   ```
+- **Variable-length positional arguments** use `*args` to collect extra positional arguments into a tuple:
+   ```python
+   def show_items(*items):
+         print(items)
+   ```
+- **Variable-length keyword arguments** use `**kwargs` to collect extra named arguments into a dictionary:
+   ```python
+   def show_options(**options):
+         print(options)
+   ```
+
+Python also supports positional-only and keyword-only parameters, which control how a parameter may be supplied. Parameters are names in a function definition; arguments are the values passed in a function call.

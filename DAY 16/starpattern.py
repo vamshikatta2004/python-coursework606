@@ -109,12 +109,49 @@
 
 #for Alphabet pattern 'K'
 
-n= int(input("enter the size:"))
-m=n//2
-for i in range(n):
-    for j in range(n):
-        if j==0 or (i+j==m) or (i-j==m):
-            print('*',end=' ')
-        else:
-            print(' ',end=' ')
-    print()
+# n= int(input("enter the size:"))
+# m=n//2
+# for i in range(n):
+#     for j in range(n):
+#         if j==0 or (i+j==m) or (i-j==m):
+#             print('*',end=' ')
+#         else:
+#             print(' ',end=' ')
+#     print()
+
+#for Alphabet pattern 'P'
+
+# n= int(input("enter the size:"))
+# m=n//2                  
+# for i in range(n):
+#     for j in range(n):
+#         if j==0  or (i==0 and j<m-0) or (i==m and j<m) or (j==m and i<m):
+#             print('*',end=' ')
+#         else:
+#             print(' ',end=' ')
+#     print()
+
+#for Alphabet pattern 'A'
+
+# n= int(input("enter the size:"))
+# m=n//2      
+# for i in range(n):          
+#     for j in range(n):
+#         if (j==0 and i!=0) or (j==n-1 and i!=0) or (i==0 and j>0 and j<n-1) or (i==m):
+#             print('*',end=' ')
+#         else:
+#             print(' ',end=' ')
+#     print()
+
+#for Alphabet pattern 'E'
+
+# n= int(input("enter the size:"))    
+# m=n//2
+# for i in range(n):        
+#     for j in range(n):
+#         if j==0 or (i==0 and j>0) or (i==m and j>0) or (i==n-1 and j>0):
+#             print('*',end=' ')
+#         else:
+#             print(' ',end=' ')
+#     print()
+
